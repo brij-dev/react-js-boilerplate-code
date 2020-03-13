@@ -18,9 +18,6 @@ const APP_DATA = require('./resources/data/app_data.json');
 
 class App extends Component {
 
-  constructor(props){
-    super(props);
-  }
 
   // Before DOM Load
   componentWillMount(){

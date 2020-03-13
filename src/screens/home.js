@@ -9,15 +9,9 @@ import * as Actions from '../redux/actions'; //Redux support
 import WebStorage from '../common/web_storage'; // local storage
 import * as WebStorageKeys from '../common/web_storage_keys'; // local storage
 
-// Navigation
-import RootNavigator from "../navigation/root_navigator";
-
 
 class Home extends Component {
 
-  constructor(props){
-    super(props);
-  }
 
   // Before DOM Load
   componentWillMount(){
