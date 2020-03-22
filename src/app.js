@@ -13,6 +13,8 @@ import  * as WebStorageKeys from './common/web_storage_keys'; // local storage
 import RootNavigator from "./navigation/root_navigator";
 import {withRouter} from 'react-router-dom';
 
+import { translate, Trans } from 'react-i18next';
+
 const APP_DATA = require('./resources/data/app_data.json');
 
 
@@ -72,4 +74,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(App));
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(translate('translation')(App)));

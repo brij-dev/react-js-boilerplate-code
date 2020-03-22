@@ -21,7 +21,7 @@ class RootNavigator extends Component {
     return (
 
       <Switch>
-        <Route path='/' component={Home} {...this.props} />
+        <Route path='/' component={Home} />
       </Switch>
 
     )
