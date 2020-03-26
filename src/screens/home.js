@@ -66,7 +66,7 @@ class Home extends Component {
         // In case of error or invalid data response
         if(error || Utils.isNullOrUndefined(data)){
 
-          console.log(CONFIG.SERVER_ERROR.MESSAGE);
+          console.log( componentInstance.props.t(CONFIG.SERVER_ERROR) );
           return;
         }
 
