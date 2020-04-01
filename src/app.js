@@ -74,4 +74,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(translate('translation')(App)));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(translate('translation')(App)));
